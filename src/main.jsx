@@ -5,19 +5,20 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Layout from './Pages/Layout.jsx';
-import Listed from './Components/Banner.jsx';
-import Bn from './Components/Bn.jsx';
-import Hero from './Components/Hero.jsx';
+import Layout from './Pages/Layout.jsx';  
+import Hero from './Components/Hero.jsx'; 
 let router=createBrowserRouter([
   {
     path:'/',
     element:<Layout></Layout>,
     children:[
       {
-        path:'/',
+        path:'/', 
+        loader:()=>fetch('/src/Components/CardData.json'),
         element:<Hero></Hero>
       },
+      
+     
       
     ]
   }

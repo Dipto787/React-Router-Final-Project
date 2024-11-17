@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "image": "https://i.ibb.co.com/8rBHSfz/kindpng-2193744-1.png",
+      "review": "An engaging psychological thriller with an unexpected twist.",
+      "totalPages": 336,
+      "rating": 4.3,
+      "category": "Thriller",
+      "tags": ["Psychological", "Suspense", "Mystery"],
+      "publisher": "Celadon Books",
+      "yearOfPublishing": 2019
+    },
+    {
+      "bookId": 2,
+      "bookName": "Atomic Habits",
+      "author": "James Clear",
+      "image": "https://i.ibb.co.com/zhW5brt/kindpng-7318921-removebg-preview.png",
+      "review": "A transformative guide to building better habits with practical strategies.",
+      "totalPages": 320,
+      "rating": 4.8,
+      "category": "Self-help",
+      "tags": ["Productivity", "Personal Development"],
+      "publisher": "Avery",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 3,
+      "bookName": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "image": "https://i.ibb.co.com/8rBHSfz/kindpng-2193744-1.png",
+      "review": "A thought-provoking exploration of human history and culture.",
+      "totalPages": 443,
+      "rating": 4.6,
+      "category": "History",
+      "tags": ["Anthropology", "Evolution"],
+      "publisher": "Harper",
+      "yearOfPublishing": 2015
+    },
+    {
+      "bookId": 4,
+      "bookName": "Dune",
+      "author": "Frank Herbert",
+      "image": "https://i.ibb.co.com/bgjdp2F/kindpng-4022054-1.png",
+      "review": "A masterpiece of science fiction with rich world-building.",
+      "totalPages": 688,
+      "rating": 4.7,
+      "category": "Science Fiction",
+      "tags": ["Adventure", "Classic"],
+      "publisher": "Ace",
+      "yearOfPublishing": 1965
+    },
+    {
+      "bookId": 5,
+      "bookName": "Becoming",
+      "author": "Michelle Obama",
+      "image": "https://i.ibb.co.com/dQpq8Gr/kindpng-81724-1.png",
+      "review": "An inspiring memoir about resilience, growth, and leadership.",
+      "totalPages": 448,
+      "rating": 4.9,
+      "category": "Biography",
+      "tags": ["Inspiration", "Leadership"],
+      "publisher": "Crown Publishing Group",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co.com/8rBHSfz/kindpng-2193744-1.png",
+      "review": "A classic tale of ambition, love, and tragedy in the Jazz Age.",
+      "totalPages": 180,
+      "rating": 4.2,
+      "category": "Classic Literature",
+      "tags": ["Romance", "Tragedy"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    }
+  ]
+  
