@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     let links = <>
-        <NavLink><li><a>Home</a></li> </NavLink>
-        <NavLink  ><li><a>Listed Books</a></li> </NavLink>
-        <NavLink><li><a>Pages to Read</a></li> </NavLink> </>;
+        <NavLink to='/' className={({isActive})=>isActive?'text-[#23BE0A] rounded-lg border-2 bg-base-200 hover:text-[#ffff] hover:bg-[#23BE0A] border-[#23BE0A] mr-5 font-extrabold':'mr-5'}><li><a>Home</a></li></NavLink>
+        <NavLink to='/listedBooks' className={({isActive})=>isActive?'text-[#23BE0A] bg-base-200 hover:text-[#ffff] hover:bg-[#23BE0A] rounded-lg border-2  border-[#23BE0A] mr-2 font-bold':'mr-2'} ><li><a>Listed Books</a></li> </NavLink>
+        <NavLink to='/pageToRead' className={({isActive})=>isActive?'text-[#23BE0A] bg-base-200 hover:text-[#ffff] hover:bg-[#23BE0A] rounded-lg border-2  border-[#23BE0A]  font-bold':''} ><li><a>Pages to Read</a></li> </NavLink> </>;
     return (
         <div>
             <div className="navbar bg-base-100">

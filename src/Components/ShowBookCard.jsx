@@ -5,7 +5,7 @@ const ShowBookCard = ({ card }) => {
     let {author,bookId,category,image,publisher,rating,review,tags,bookName}=card;
     return (
         <div className="px-1">
-            <div className="card border-2 p-2 md:p-5">
+            <NavLink to={`/detail/${bookId}`} className="card border-2 p-2 md:p-5">
                 <figure className="bg-base-200 rounded-2xl p-4  md:p-8">
                     <img
                         src={image}
@@ -31,7 +31,7 @@ const ShowBookCard = ({ card }) => {
                         <div className="flex items-center gap-2">{rating}<CiStar size={20} /></div>
                     </div>
                 </div>
-            </div>
+            </NavLink>
         </div>
     );
 };

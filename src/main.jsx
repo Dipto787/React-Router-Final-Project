@@ -1,4 +1,5 @@
- 
+import   {Toaster}  from 'react-hot-toast'
+
 import { createRoot } from 'react-dom/client'
 import './index.css' 
 import {
@@ -6,7 +7,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from './Pages/Layout.jsx';  
-import Hero from './Components/Hero.jsx'; 
+import Hero from './Components/Hero.jsx';  
+import BookDetails from './Components/BookDeatils.jsx';
+import React from 'react';
+import ListedBook from './Components/ListedBook.jsx';
+import PageToRead from './Components/PageToRead.jsx';
 let router=createBrowserRouter([
   {
     path:'/',
@@ -17,7 +22,20 @@ let router=createBrowserRouter([
         loader:()=>fetch('/src/Components/CardData.json'),
         element:<Hero></Hero>
       },
-      
+      {
+        path:'/detail/:id',
+        loader:()=>fetch('/src/Components/CardData.json'),
+        element:<BookDetails></BookDetails>
+        
+      },
+      {
+        path:'/listedBooks',
+        element:<ListedBook></ListedBook>
+      },
+      {
+        path:'/pageToRead',
+        element:<PageToRead></PageToRead>
+      }
      
       
     ]
@@ -25,7 +43,8 @@ let router=createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-   <RouterProvider router={router}>
-
-   </RouterProvider>
+  <React.StrictMode>
+    <Toaster />
+    <RouterProvider router={router} />
+  </React.StrictMode>
 )

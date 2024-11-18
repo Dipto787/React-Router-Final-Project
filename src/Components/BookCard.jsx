@@ -3,8 +3,7 @@ import ShowBookCard from "./ShowBookCard";
 
  
 const BookCard = () => {
-    let bookCardData=useLoaderData();
-    console.log(bookCardData)
+    let bookCardData=useLoaderData(); 
     return (
         <div>
          <h2 className="text-5xl font-bold text-center">Books</h2>
