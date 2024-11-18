@@ -3,6 +3,8 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { NavLink, Outlet } from "react-router-dom";
 const ListedBook = () => {
     let [actives,setActives]=useState(0);
+    let [category,setCategory]=useState('');
+    
     return (
         <div className="max-w-7xl mt-3 px-4 mx-auto">
             <div className="bg-base-200 p-8 rounded-lg">
@@ -12,9 +14,9 @@ const ListedBook = () => {
                 <div className="dropdown mt-7 flex justify-center dropdown-bottom">
                     <div tabIndex={0} role="button" className="btn    text-center m-1 bg-[#23BE0A] text-white font-bold px-8">Sort By <RiArrowDropDownLine size={40} /></div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                        <li><a>Rating</a></li>
-                        <li><a>Number of pages</a></li>
-                        <li><a>Publisher year</a></li>
+                        <li onClick={()=>setCategory('rating')}><a>Rating</a></li>
+                        <li onClick={()=>setCategory('numOfPage')}><a>Number of pages</a></li>
+                        <li onClick={()=>setCategory('publishYear')}><a>Publisher year</a></li>
                     </ul>
                 </div>
             </div>
